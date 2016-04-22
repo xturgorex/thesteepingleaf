@@ -1,0 +1,11 @@
+<?php 
+// Create Dynamic Sidebars
+if (function_exists('register_sidebar')) :
+ 	register_sidebar(array("name" => "Sidebar", "id" => "sidebar", "description" => "Place the Blue (Obox) widgets here.", "before_title" => '<h4 class="widgettitle">', "after_title" => '</h4>', 'before_widget' => '<li id="%1$s" class="widget %2$s">', 'after_widget' => '</li>'));    
+ 	register_sidebar(array("name" => "Slider", "id" => "slider", "description" => "Place the Red (Obox) widget here."));
+ 	register_sidebar(array("name" => "Home Page", "id" => "homepage", "description" => "Place the Orange (Obox) widgets here.", "before_title" => '<h4 class="widgettitle">', "after_title" => '</h4>', 'before_widget' => '<li id="%1$s" class="widget %2$s"><div class="content">', 'after_widget' => '</div></li>'));
+ 	register_sidebar(array("name" => "Home Page - Side by side", "id" => "homepage-secondary", "description" => "Place the (Obox) Content Widget and (Obox) Testimonial widgets here and then set the (Obox) Content Widget to display either Posts or Portfolio items.", "before_title" => '<h4 class="widgettitle">', "after_title" => '</h4>', 'before_widget' => '<li id="%1$s" class="widget %2$s"><div class="content">', 'after_widget' => '</div></li>'));
+ 	register_sidebar(array("name" => "Home Page - Three Column", "id" => "homepage-threecol", "description" => "Place the Blue (Obox) widgets and / or (WordPress) default widgets here.", "before_title" => '<h4 class="widgettitle">', "after_title" => '</h4>', 'before_widget' => '<li id="%1$s" class="widget %2$s"><div class="content">', 'after_widget' => '</div></li>'));
+ 	register_sidebar(array("name" => "Shop Sidebar", "id" => "shopsidebar", "description" => "Place the (WooCommerce) widgets here.", "before_title" => '<h4 class="widgettitle">', "after_title" => '</h4>', 'before_widget' => '<li id="%1$s" class="widget %2$s"><div class="content">', 'after_widget' => '</div></li>'));
+ 	register_sidebar(array("name" => "Footer", "id" => "footer-sidebar", "description" => "Place the Blue (Obox) widgets or grey (Standard) here widgets.", "before_title" => '<h4 class="widgettitle">', "after_title" => '</h4>', 'before_widget' => '<li id="%1$s" class="widget %2$s column">', 'after_widget' => '</li>'));    
+endif;

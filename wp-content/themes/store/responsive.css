@@ -1,0 +1,466 @@
+/*-------------------------------*/
+/*- MEDIA QUERIES ---------------*/
+/*-------------------------------*/
+
+/*---------------*/
+/* iPad and down */
+@media only screen and (max-width: 1024px){
+
+/*-------------------------------*/
+/*- LAYOUT ----------------------*/
+/*-------------------------------*/
+#header-container{padding: 0px; position: relative; height: auto;}
+#header{padding: 10px;}
+#content-container{padding-top: 0 !important;}
+#content{padding: 20px;}
+#footer-container{padding: 10px;}
+
+
+/*-------------------------------*/
+/*- HEADER ----------------------*/
+/*-------------------------------*/
+	#header{text-align: left;}
+	/*---------------------------*/
+	/*- LOGO --------------------*/
+	.logo{margin-bottom: 10px;}
+
+	.default-logo{padding: 15px; font-size: 18px;}
+
+	ul#nav li::after {
+		color: #3f3f3f;
+		content: "•";
+		margin-left: 10px;
+	}
+	ul#nav li {
+		padding: 0 10px;
+	}
+
+	/*---------------------------*/
+	/*- TITLE BLOCK -------------*/	
+	.title-block{padding: 30px 10px;}
+	
+
+/*-------------------------------*/
+/*- HOME PAGE -------------------*/
+/*-------------------------------*/
+
+	    /*---------------------------*/
+	/*- SLIDER ------------------*/
+	.slider{position: relative; height: 320px; overflow: visible;}
+	.slider .slider-content{padding: 2% 8%; width: 84%;}
+	.slider ul li{padding: 0; max-height: 320px;}
+	.slider .slider-copy{width: 58%;}
+	.slider .slider-image{width: 38%;}
+	
+		/*-----------------------*/
+		/*- SLIDER COPY ---------*/
+		.slider-copy h2{margin-bottom: 10px; font-size: 28px; line-height: 32px; font-weight: 900; letter-spacing: 0px;}
+		.slider-copy h5{margin-bottom: 10px; font-size: 16px; line-height: 1.5em; font-weight: 600;}
+		.slider-copy p{margin: 0 0 10px; font-size: 16px;}
+		
+		/*-----------------------*/
+		/*- SLIDER ARROWS -------*/
+		.slider-arrows a{width: 30px; border: none;}
+		.slider-arrows .next{right: 5px; background-position: -70px 0px;}
+		.slider-arrows .previous{left: 5px; background-position: -10px 0px;}
+		.slider-arrows .next:hover{width: 30px; background-position: -70px 0px;}
+		.slider-arrows .previous:hover{width: 30px; background-position: -10px 0px;}
+
+		/*-----------------------*/
+		/*- SLIDER POSITIONS ----*/
+		
+			/*-------------------*/
+			/*- IMAGE LEFT ------*/
+			.slider .image-left .slider-image{padding: 0; margin: 0px;}
+			.slider .image-left .slider-copy{padding: 0; margin: 0px;}
+			
+			/*-------------------*/
+			/*- IMAGE RIGHT -----*/
+			.slider .image-right .slider-image{padding: 0; margin: 0px;}
+			.slider .image-right .slider-copy{padding: 0; margin: 0px;}
+			
+			/*-------------------*/
+			/*- WITH VIDEO ------*/
+			.slider .image-right .has-video, .slider .image-left .has-video{padding: 2%; margin: 0px;}
+			
+			/*-------------------*/
+			/*- TEXT ONLY -------*/
+			.slider .text-only .slider-copy{width: 80%; float: none; padding: 0; margin-left: auto; margin-right: auto;}
+			
+			/*-------------------*/
+			/*- VIDEO ONLY ------*/
+			.slider .image-only .has-video{padding: 0; height: 320px;}
+			.slider .image-only .has-video iframe{max-height: 280px;}
+			
+			/*-------------------*/
+			/*- CENTERED CONTENT */
+			.slider .image-title .slider-copy{text-align: center; margin: 0 auto 30px; padding: 0; margin-top: -25px; width: 80%;}
+			.slider .image-title .slider-copy h5, .slider .image-title .slider-copy p{display: none;}
+			.slider .image-title .slider-image{float: none; margin: 0px auto; text-align: center; margin-bottom: -25px;}
+		
+		
+/*-------------------------------*/
+/*- HOME PAGE WIDGETS -----------*/
+/*-------------------------------*/
+
+	/*---------------------------*/
+	/*- WIDGETS BLOCK -----------*/	
+	#widget-block{margin-top: 0px;}
+	.widget-list[id*=home_page]{padding: 0;}
+	.content-widget .post-image{margin-bottom: 10px;}
+
+	/*---------------------------*/
+	/*- WIDGETS DOWN ------------*/	
+	#home_page_downs.widget-list{padding: 0;}
+	#home_page_downs .widget{padding: 20px 20px 0;}
+	#home_page_downs .widgettitle{}
+	#home_page_downs .widget_text{padding: 10px;}
+	#home_page_downs .widget_text .widgettitle{margin: 0 0 15px; padding-bottom: 15px;}	
+	#home_page_downs .testimonial-item{margin: auto;}
+
+	/*---------------------------*/
+	/*- WIDGETS SIDE BY SIDE ----*/	
+	#home_page_sides{padding: 0 0 20px;}
+	#home_page_sides .widget{clear: both; float: none; width: auto; padding: 20px; margin: 0 0 20px;}
+	#home_page_sides .widget:nth-child(2n+2){clear: both; float: none; width: auto; padding: 10px; margin: 0;}
+	
+	#home_page_three_column{margin: 10px 20px 20px;}
+	#home_page_three_column .widget{float: none; width: 100%;}
+	#home_page_three_column .widget .content{padding: 20px; border: none; border-bottom: 1px solid #ebebeb; min-height: auto !important;}
+
+	/*---------------------------*/
+	/*- WIDGET SPECIFIC CSS -----*/	
+	.testimonial-item .testimonial-image{width: 60px; height: 60px; margin-right: 20px;}
+	.services-content-widget .post-image{float: left; max-width: 60px; margin-right: 20px;}
+	
+	
+/*-------------------------------*/
+/*- POST PAGES ------------------*/
+/*-------------------------------*/
+
+	/*---------------------------*/
+	/*- CONTENT CONTAINERS ------*/	
+	.post-content{padding: 0px;}
+	.post-content .post-image{margin: 0px 0px 20px;}
+	.portfolio-content{padding: 0px;}
+	#full-width .post-image{margin: 0px 0px 20px;}
+
+	/*---------------------------*/
+	/*- BREAD CRUMBS ------------*/
+	#crumbs{padding: 10px;}
+	#crumbs li{float: left; display: inline; margin-right: 15px; color: #999;}
+	#crumbs a{color: #999;}
+	#crumbs a:hover{text-decoration: underline;}
+	#crumbs .current, #crumbs .current a{color: #595959;}
+
+	/*---------------------------*/
+	/*- META BLOCK --------------*/	
+	.meta-block.tags{width: 100%; float: none;}
+	.meta-block.social{width: 100%; float: none;}
+
+	/*---------------------------*/
+	/*- COMMENTS ----------------*/
+	#comments{padding: 10px; margin-top: 20px;}
+	#comments .comments-title{padding: 0; margin-bottom: 20px;}
+	#respond{padding: 10px; margin: 0px -10px -10px;}
+	
+		
+/*-------------------------------*/
+/*- SHOP ------------------------*/
+/*-------------------------------*/
+.products-single .type-product{padding: 0px;}
+	
+		
+/*-------------------------------*/
+/*- SERVICES --------------------*/
+/*-------------------------------*/	
+.related-services-container{padding: 20px;}
+.related-services li{line-height: normal;}
+.related-services img{ display: none;}
+
+		
+/*-------------------------------*/
+/*- PORTFOLIO -------------------*/
+/*-------------------------------*/	
+.portfolio-categories{margin-bottom: 0;}
+.portfolio-categories li{margin-bottom: 10px;}
+
+	
+/*-------------------------------*/
+/*- RIGHT COLUMN ----------------*/
+/*-------------------------------*/
+#right-column .widget-list .widget{padding: 10px;}
+	
+	
+/*-------------------------------*/
+/*- SITEWIDE CTA ----------------*/
+/*-------------------------------*/
+.site-wide-cta span{display: block; margin: 0 0 20px 0; line-height: 30px;}
+.site-wide-cta .action-link{display: block;}
+
+
+}
+
+/*------------------------------------------------*/
+/* layouts smaller than 736px, iPhone and mobiles */
+@media only screen and (max-width: 736px){
+
+/*-------------------------------*/
+/*- LAYOUT ----------------------*/
+/*-------------------------------*/
+
+	/*---------------------------*/
+	/*- CONTAINERS --------------*/
+	body{font-size: 12px;}
+	#header-contact-container{display: none;}
+	#header{padding: 0px; text-align: left;}
+	#content-container{padding-top: 0px !important;}
+	#content{padding: 10px;}
+	#left-column{clear: both; float: none; width: 100%; margin-bottom: 20px;}
+	#right-column{clear: both; float: none; width: 100%;}
+
+	/*---------------------------*/
+	/*- GRIDS -------------------*/
+	.grid{overflow: hidden;}
+	.six-column .column, .five-column .column, .four-column .column, .three-column .column, .two-column .column{float: none; width: 100%; margin-right: 0%;}
+	
+
+/*-------------------------------*/
+/*- HEADER ----------------------*/
+/*-------------------------------*/	
+
+	/*---------------------------*/
+	/*- LOGO --------------------*/
+	.logo{float: none; display: inline-block; max-width: 80%; margin-bottom: 10px; padding: 10px 0px 0px 10px;}
+
+	/*---------------------------*/
+	/*- SEARCH ------------------*/
+	.header-search{float: none; display: block; margin: 10px;}
+	.header-form{}
+	.header-search .search-form{width: 92%; padding: 13px 4%; max-width: none; display: block;}
+	.header-shrink .logo {display: block; float: none;}
+	.header-shrink #header {padding: 0px;}
+	.header-shrink #navigation-container {position: relative; bottom: inherit; right: inherit;}
+	/*---------------------------*/
+	/*- NAV ---------------------*/
+	#menu-drop-button{z-index: 5; display: block; float: right; height: 27px; width: 40px; padding-top: 8px; margin: 5px -10px 0px 0px; color: #777; text-transform: uppercase;}
+	#menu-drop-button:hover{color: #111;}
+	#menu-drop-button .menu-label{display: none;}
+	
+	ul#nav{clear: both; padding: 0px; margin: 0px; float: none; position: relative; display: none;}
+	ul#nav li{float: none; clear: both; display: block; margin: 0px; border-bottom: 1px dotted #ccc;}
+	ul#nav li:after{margin-left: 0px; content:"";}
+	ul#nav li:last-child{border-bottom: none;}
+	ul#nav li a{float: none; padding: 10px; display: block; border: none; border-radius: 0px;}
+
+		/*-----------------------*/
+		/*- SUB NAV -------------*/	
+		ul#nav li ul.sub-menu{display: block !important; width: 100%; padding: 0; margin: 0; visibility: visible !important; position: relative; left: auto; top: auto; right: auto !important; background: none; box-shadow: none; border-radius: 0;}
+		ul#nav li ul.sub-menu li{width: auto; margin: 0; padding: 0px; border-radius: 0px; border: none; font-size: 12px; font-weight: normal;}
+		ul#nav li ul.sub-menu li a{padding: 0px 20px 10px; border-radius: 0px; border: none;}
+
+
+	/*---------------------------*/
+	/*- TITLES ------------------*/
+	.title-block{padding: 30px 10px;}
+	.title-block h2{margin: 0; font-size: 26px; line-height: 30px; letter-spacing: normal;}
+	.title-block p{margin: 20px auto 0; font-size: 16px;}
+
+		/*-----------------------*/
+		/*- PAGE TITLES ---------*/	
+		.page-title-block{margin: 0 0 20px;}
+		.page-title{font-size: 26px; line-height: 30px;}
+		
+		.post-title-block{margin: 0 0 20px;}
+		.post-title-block .post-title{padding: 0 0 15px; margin: 0 0 15px; font-size: 26px; line-height: 30px;}
+		
+		.service-title-block{margin: 0 0 20px;}
+		.service-title{font-size: 26px; line-height: 30px;}
+
+
+/*-------------------------------*/
+/*- HOME PAGE -------------------*/
+/*-------------------------------*/
+	
+	/*---------------------------*/
+	/*- SLIDER ------------------*/
+	.slider .slider-content{padding: 2% 0%; margin-top: 20px;}
+	.slider{background-size: cover; max-height: 300px;}
+	.slider-arrows{top: 50%;}
+	.slider ul li{max-height: 300px;}
+	.slider .slider-copy{float: none; width: 100%; margin-bottom: 20px !important; text-align: center;}
+	.slider .slider-image{float: none; width: 100%;}
+	.slider .slider-copy p{display: none;}
+
+	/*---------------------------*/
+	/*- WIDGETS DOWN ------------*/
+	#home_page_downs .widget{padding: 10px;}
+	#home_page_downs .widgettitle{}
+	#home_page_downs .widget_text .content{}
+	
+	/*---------------------------*/
+	/*- WIDGETS SIDE BY SIDE ----*/	
+	#home_page_sides .column{margin-bottom: 20px;}
+
+	/*---------------------------*/
+	/*- HERO WIDGET -------------*/
+	.hero-content-widget .left-col{float: none; width: 100%; margin: 0px;}
+	.hero-content-widget .middle-col{float: none; width: 100%; margin: 0px; clear: both; overflow: hidden;}
+	.hero-content-widget .middle-col .column{float: none; width: 100%; margin-right: 0px; overflow: hidden;}
+	.hero-content-widget .right-col{float: none; width: 100%; margin: 0px;}
+				
+	/*---------------------------*/
+	/*- FEATURES WIDGET ---------*/
+	.features-widget .column{padding: 0px; margin-bottom: 20px;}
+
+		/*-----------------------*/
+		/*- CONTENT LAYOUT ------*/
+		.features-widget .content{margin-bottom:  0px;}
+		.features-widget h2{margin: 0 0 15px; font-size: 26px; line-height: 30px;}
+		.features-widget h5{margin-bottom: 15px; font-size: 17px; line-height: 1.5em; color: #888; font-style: italic;}
+		
+			/*-------------------*/
+			/*- IMAGE LEFT ------*/
+			.features-widget .image-left .content .post-image{float: none; width: 100%; margin-top: 20px;}
+			.features-widget .image-left .feature-content{float: none; width: 100%;}
+			
+			/*-------------------*/
+			/*- IMAGE RIGHT -----*/
+			.features-widget .image-right .content .post-image{float: none; width: 100%; margin-bottom: 20px;}
+			.features-widget .image-right .feature-content{float: none; width: 100%;}
+			
+			/*-------------------*/
+			/*- IMAGE ONLY ------*/
+			.features-widget .image-only .post-image{margin: 0 auto;}
+			
+			/*-------------------*/
+			/*- TEXT ONLY -------*/
+			.features-widget .image-title{text-align: left;}
+			.features-widget .image-title .post-image{margin: 20px auto 0;}
+			
+			/*-------------------*/
+			/*- CENTERED CONTENT */
+			.features-widget .text-only{text-align: left; padding: 0;}
+	
+				
+	/*---------------------------*/
+	/*- TESTIOMINIAL WIDGET -----*/
+	.testimonials-content-widget{padding: 20px;}
+	.testimonial-item{margin: 0;}
+	.testimonial-item blockquote{font-size: 17px; line-height: 1.5em}
+	.testimonial-item .testimonial-name{font-size: 14px;}
+
+
+/*-------------------------------*/
+/*- PAGE TEMPLATE CONTENT -------*/
+/*-------------------------------*/
+
+	/*---------------------------*/
+	/*- PAGE INTRO COPY ---------*/
+	.copy.page-feature-copy{margin: 0 0 30px; font-size: 16px; line-height: 1.6em; text-align: left; color: #999;}
+	
+	/*---------------------------*/
+	/*- READ MORE BUTTONS -------*/
+	.content-widget .read-more, .post-content .read-more{display: inline-block; padding: 5px 10px; margin-top: 10px; position: static; right: auto; bottom: auto; text-align: center;}
+
+
+/*-------------------------------*/
+/*- PORTFOLIO -------------------*/
+/*-------------------------------*/
+.portfolio-content{padding: 10px;}
+.portfolio-content #left-column{clear: both; float: none; width: auto;}
+.portfolio-content #right-column{clear: both; float: none; width: 100%;}
+
+	
+/*-------------------------------*/
+/*- FEATURES CONTENT ------------*/
+/*-------------------------------*/
+.features-content #left-column{width: 100%; clear: both; border: none; margin-bottom: 0px;}
+.features-content #left-column .feature-block {display: block !important; margin-bottom: 20px; border-bottom: 2px solid #ccc;}
+.features-content #left-column .feature-block:last-child{margin-bottom: 0px; border: none;}
+.features-content #right-column{display: none;}
+	
+	
+/*-------------------------------*/
+/*- SHOP ------------------------*/
+/*-------------------------------*/
+
+	.woocommerce-result-count{display: none;}
+	.woocommerce-ordering{float: none;}
+	.orderby, .shipping_calculator select, .country_select, .state_select{float: none; padding: 8px; border: 1px solid rgb(224, 224, 224); max-width: 300px; width: 100%; border-radius: 4px 4px 4px 4px;}
+	
+	/*---------------------------*/
+	/*- PRODUCT LIST ------------*/
+	.products .product, .three-column .products .product{float: none; width: 100%; margin-right: 0;}
+	.products .product .add_to_cart_button, .products .product .product_type_variable{margin: 20px 0px 0px; padding: 10px; float: none; overflow: hidden; clear: both; display: block; background: #a5bc47; text-align: center;}
+	.products .product .add_to_cart_button:hover, .products .product .product_type_variable:hover{background: #333;}
+	.products .product .added_to_cart{margin: 8px 20px 0px; float: none; overflow: hidden; clear: both; display: block; text-align: center;}
+	.products .product .price{float: none;}
+	
+	/*---------------------------*/
+	/*- PRODUCT PAGE ------------*/
+	.product-images{float: none; width: auto; margin: 0 0 10px; border-bottom: 1px solid #eee;}
+	.product-images img{border-radius: 3px 3px 0px 0px;}
+	.purchase-options-container{float: none; width: 100%;}
+	.product_title{margin-bottom: 10px; font-size: 26px; line-height: 30px;}
+		
+		/*-----------------------*/
+		/*- RELATED / UPSELLS ---*/
+		.related, .upsells{padding: 10px;}
+		.related .product{float: none; width: 100%; padding: 0 0 20px; border: none;}
+		.related .product:last-child{border: none;}
+		
+		/*-----------------------*/
+		/*- TABBED BLOCK --------*/
+		.woocommerce_tabs{clear: both;}
+		.tabs{padding: 0; margin-bottom: 20px; border: none;}
+		.tabs li{float: none;}
+		.tabs li a{display: block; padding: 3px 15px; margin: 0 0 5px; background: #f2f2f2; border: 1px solid #e0e0e0; border-radius: 3px;}
+		.tabs li.active{margin: 0;}
+
+		/*-----------------------*/
+		/*- CART PAGE -----------*/
+		table .total-cart-buttons td{text-align: left;}
+		table td .button.checkout-button{float: none; margin: 0 0 10px;}
+		.copy .shop_table .actions{text-align: left;}
+		.button[name=update_cart]{display: block; width: 100%; margin-bottom: 10px;}
+		.checkout-button{ display: block; float: none !important; padding: 10px;}
+		td .coupon{float: none; width: 100%; margin: 0 0 10px;}
+		.shipping_calculator{float: none; width: auto;}
+		.cart_totals{float: none; width: auto; margin: 0 0 20px;}
+		
+		table td.product-thumbnail, table th.product-thumbnail{display: none;}
+		table td.product-quantity, table th.product-quantity{display: none;}
+
+		/*-----------------------*/
+		/*- CHECKOUT PAGE -------*/
+		.col-1, .col-2{float: none; width: 100%; margin: 0 0 20px;}
+		.copy #order_review table, #payment{clear: both; float: none; width: 100%; margin: 0 0 20px; overflow: hidden;}
+
+/*-------------------------------*/
+/*- CTA -------------------------*/
+/*-------------------------------*/
+.site-wide-cta{text-align: center;}
+.site-wide-cta .action-link{float: none; display: inline-block;}
+
+		
+/*-------------------------------*/
+/*- FOOTER ----------------------*/
+/*-------------------------------*/
+#back-top{bottom: 10px; right: 10px;}
+#back-top a{width: 30px; height: 30px;}
+
+.obox-credit{float: none;}
+
+}
+/*------------------------------------------------*/
+/* landcape phones */
+@media only screen
+and (min-width : 568px) and (max-width : 768px){
+/*---------------------------*/
+/*- GRIDS -------------------*/
+#header-contact-container{display: block;}
+.grid{overflow: hidden;}
+.six-column .column, .five-column .column, .four-column .column, .three-column .column, .two-column .column, .three-column .products .product{float: left; width: 31% !important; margin: 1%;}	
+.header-contact, .header-search, .header-cart-button{display: none;}
+}
